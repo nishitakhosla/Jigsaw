@@ -1,9 +1,14 @@
 f = open("/share/data/day5/puzzle2.txt")
 
-r = f.readline()
+r = f.readlines()
 
-for i in range(r):
+for i in range(len(r)):
 
-   r = f.readline().rstrip(" /n'")
+   x = r[i].rstrip()
 
+#<<<<<<< HEAD
 print i
+=======
+   print x
+
+>>>>>>> 1a43a3b238c98413fa122ea0b3292dd9a0d4ff71
