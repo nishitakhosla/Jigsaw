@@ -1,4 +1,10 @@
-f = open("/share/data/ecoli-seq.txt")
+f = open("/share/data/day5/puzzle2.txt")
 
+r = f.readline()
 
+for i in range(r):
+
+   r = f.readline().rstrip(" /n'")
+
+print i
 
