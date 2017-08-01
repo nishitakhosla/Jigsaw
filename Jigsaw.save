@@ -1,0 +1,29 @@
+f = open("/share/data/day5/puzzle2.txt")
+
+r = f.readlines()
+
+x = ""
+
+for y in range(len(r)):
+
+   r[y] = r[y].rstrip()
+
+for i in r:
+
+   x += i
+
+x = x.replace(" ", "")
+
+x = x.replace(","," ")
+
+S = x.split(" ")
+
+D = {}
+
+for z in S:
+
+   D[z] = 1
+
+Sequence = D.keys()
+
+print Sequence
