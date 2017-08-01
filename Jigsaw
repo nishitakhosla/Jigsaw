@@ -1,3 +1,5 @@
+#Reading the file and creating a proper list by removing new line and any extra space and commas----------------------------------------------------------------------
+
 f = open("/share/data/day5/puzzle2.txt")
 
 r = f.readlines()
@@ -20,6 +22,8 @@ x = x.replace(","," ")
 
 S = x.split(" ")
 
+#Deleting any duplicates from the list--------------------------------------------------------------------------------------------------------------------------------
+
 D = {}
 
 for z in S:
@@ -28,15 +32,17 @@ for z in S:
 
 Sequence = D.keys()
 
+#Finding the very beginning of the proper sequence--------------------------------------------------------------------------------------------------------------------
+
 t = Sequence
 
 for l in range(len(Sequence)):
 
    del t[l]
    t = "".join(t)
-
-   if (t.find(Sequence[l][0:5])):
-
+   Sequence = D.keys()   
+   if (Sequence[l][0:5] in t):
+      
       t = Sequence
 
    else:
