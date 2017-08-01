@@ -50,3 +50,9 @@ for l in range(len(Sequence)):
       puzzle = Sequence[l]
       print puzzle
       break
+
+#Calculating the next part of the sequence----------------------------------------------------------------------------------------------------------------------------
+
+for s in range(len(Sequence)):
+
+   
