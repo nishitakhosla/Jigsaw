@@ -48,7 +48,6 @@ for l in range(len(Sequence)):
    else:
 
       puzzle = Sequence[l]
-      print puzzle
       break
 
 #Calculating the next part of the sequence----------------------------------------------------------------------------------------------------------------------------
@@ -68,6 +67,5 @@ for s in range(len(Sequence)):
          puzzle = puzzle + Sequence[item][w+5:15]
          f = len(puzzle) - 5
          g = len(puzzle)
-
 
 print puzzle
